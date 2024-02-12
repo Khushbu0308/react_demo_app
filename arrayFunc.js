@@ -59,4 +59,22 @@ everyData = everyData.every((n) => {
 })
 console.log(everyData);
 
+
+// You can add elements to the end of an array using the push() method 
+// or to the beginning using the unshift() method.
+const fruits = ['Apple', 'Banana'];
+fruits.push('Cherry');
+fruits.unshift('Orange');
+console.log(fruits);
+
+const fruitsR = ['Apple', 'Banana', 'Cherry'];
+fruitsR.pop();
+fruitsR.shift();
+console.log(fruitsR);
+
+
+// You can use the Array.isArray() method to check if a variable is an array.
+const testDataArray = [1, 2, 3, 4, 5, 6];
+console.log(Array.isArray(testDataArray));
+
 // Note: We need to learn reduce method in this File.
