@@ -27,7 +27,6 @@ let adults = people.filter(res => {
 let adultsAletrnateOption = people.filter(big => big.age >= 18);
 console.log(adults);
 
-
 let evenNumberMap = [3, 4, 5, 6, 8, 10, 12, 13, 18];
 evenNumberMap = evenNumberMap.map((n) => {
     if (n % 2 == 0) { return `Odd = ${n}` } else { return `Even = ${n}` }
@@ -40,7 +39,6 @@ evenNumberMapCopy.map((n) => {
 });
 console.log(evenNumberMapCopy);
 
-
 let evenNumberMapCopyFor = [3, 4, 5, 6, 8, 10, 12, 13, 18];
 let dataTest = [];
 evenNumberMapCopyFor.forEach((n) => {
@@ -48,6 +46,17 @@ evenNumberMapCopyFor.forEach((n) => {
 });
 console.log(dataTest);
 
-
+// Tests whether at least one element in the array passes the test implemented by the provided function.
+let someData = [2, 4, 5, 6, 7, 8, 10]
+someData = someData.some((n) => {
+    return n % 2 == 0
+})
+console.log(someData);
+//Tests all the element in the array passes the test implemented by the provided function.
+let everyData = [2, 4, 5, 6, 7, 8, 10]
+everyData = everyData.every((n) => {
+    return n % 2 == 0
+})
+console.log(everyData);
 
 // Note: We need to learn reduce method in this File.
