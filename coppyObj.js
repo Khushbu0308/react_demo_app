@@ -27,3 +27,26 @@ console.log(obj4.firstName)
 // Shallow copy is useful when you want to create a new object that has the same properties as the original object, but you do not need to keep the two objects in sync.For example, you might use a shallow copy to create a new object that you will use to pass to a function.
 // Deep copy is useful when you want to create a new object that has the same properties as the original object, and you need to keep the two objects in sync.For example, you might use a deep copy to create a new object that you will use to store the state of your application.
 
+
+// q: how to change the fname value without changeing the original object fname value
+// Ans: 1
+const data = {
+    fname: "Khushbu",
+    lname: "Rani"
+}
+const newData = { ...data }
+newData.fname = "Rakhi"
+console.log(data);
+console.log(newData)
+
+//Ans2:
+// const data = {
+//     fname: "Khushbu",
+//     lname: "Rani"
+// }
+// const newData = JSON.parse(JSON.stringify(data));
+// newData.fname = "Rakhi"
+// console.log(data);
+// console.log(newData)
+
+
